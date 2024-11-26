@@ -16,6 +16,48 @@ body {
     padding-top: 4.5rem;
 }
 
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        padding-top: 4rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .top-header {
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .nav-menu {
+        padding: 0 1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .logo {
+        height: 24px;
+    }
+
+    .social-links {
+        gap: 18px;
+    }
+
+    .social-link .icon {
+        font-size: 18px;  
+    }
+}
+
 .top-header {
     position: fixed;
     top: 0;
@@ -73,8 +115,9 @@ body {
 h1 {
     font-family: 'Barlow', sans-serif;
     color: var(--primary-color);
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0.75rem;
+    font-size: 42px;
 }
 
 h2 {
@@ -98,13 +141,19 @@ h2 {
 }
 
 .social-links {
-    gap: 15px;
+    gap: 23px;
 }
 
 .social-link {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: color 0.3s;
+}
+
+.social-link .icon {
+    font-size: 20px;  
+    color: var(--primary-color);
     transition: color 0.3s;
 }
 
@@ -154,7 +203,7 @@ h2 {
 
 a {
     font-family: 'Barlow', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     color: var(--primary-color);
     transition: color 0.3s;
@@ -177,4 +226,43 @@ strong {
     color: #444;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
+}
+
+.hero-section {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 32%;
+    margin-top: 3rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 0; 
+    }
+
+    .hero-content h1 {
+        margin-top: 1rem;
+    }
 }
