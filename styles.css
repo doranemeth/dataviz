@@ -39,11 +39,7 @@ body {
         padding: 0 1rem;
     }
 
-    .contact-info {
-        flex-direction: column;
-        gap: 1rem;
-        
-    }
+
 
     .logo {
         height: 24px;
@@ -127,23 +123,16 @@ h2 {
     margin-bottom: 1.25rem;
 }
 
-.contact-info {
-    display: flex;
-    
-    margin-bottom: 1.5rem;
-        
-}
 
-.contact-item, .social-links {
+
+.social-links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 23px;
     font-size: 18px;
 }
 
-.social-links {
-    gap: 23px;
-}
+
 
 .social-link {
     display: flex;
